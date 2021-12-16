@@ -9,8 +9,7 @@ import Foundation
 import UIKit
 
 public class TrackConfig: NSObject{
-    var serverUrl: String = "https://zhls.qq.com/api/v1/safe-report"
-    
+        
     var secretId: String;
     var secretKey: String;
     var launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -20,6 +19,7 @@ public class TrackConfig: NSObject{
     
     @objc public var async: Bool = false;
     
+    @objc public var serverUrl: String = "https://zhls.qq.com/api/v1/safe-report"
     
     @objc public init (secretId: String, secretKey: String, launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         self.secretId = secretId;
